@@ -1,0 +1,571 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Open Sans', sans-serif;
+}
+
+html {
+ color: -internal-root-color;
+}
+header {
+ background-color: #81C753;
+ width: auto;height: auto;
+ color: white;
+}
+.nav-menu-section {
+padding: 20px 0 20px 0;
+}
+.nav-bar-menu {
+ display: flex;
+ flex-flow: row wrap;
+ align-items: center;
+ align-content: center;
+ justify-content: space-between;
+}
+.container{
+ margin-left:50px;margin-right: 50px;
+}
+.menu-items {
+ align-self: center;
+ padding: 10px 0px;
+ border-radius: 10px;
+ margin: 10px;
+ color: white;
+}
+.menu-items:hover {
+ background-color: #6E9554;
+ text-decoration: none;
+ color: white;
+}
+a {
+ text-decoration: none;
+ color: white;
+ font-size: 16px;
+ cursor: pointer;
+}
+a:hover{
+ text-decoration: none;
+ color: white;
+}
+.active {
+ background-color: #6E9554;
+}
+.logo {
+ max-width: 100%;
+ display: block;
+}
+.nav-bar-menu ul {
+ list-style: none;
+ display: flex;
+ flex-wrap: nowrap;
+ margin-block-start: 1em;
+ margin-block-end: 1em;
+ margin-inline-start: 0px;
+ margin-inline-end: 0px;
+ padding-inline-start: 40px;
+}
+.nav-bar-menu li {
+ display: flex;
+ flex-wrap: nowrap;
+ flex-shrink: 1;
+ justify-content: center;
+ width: 140px;
+ text-align: -webkit-match-parent;
+}
+
+.product{
+ padding-right: 100px;
+ margin-left: 0;
+ background-color: #B7E39A;
+ padding-bottom: 40px;
+}
+.flex-container{
+ padding-top: 40px;
+ display: flex;
+ justify-content: space-between;
+}
+.p-flex-2{
+ display: flex;
+ align-items: center;
+ margin-right: 200px;
+}
+.product p{
+ display: flex;
+ text-align: center;
+ width: 400px;
+ font-family: Open Sans;
+ font-size: 20px;
+ padding: 0 20px 0 20px;
+/*  color: white; */
+}
+
+/* Company section */
+.company {
+ padding: 40px 0 40px 0;
+}
+.flex-container-company{
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+ margin-right: 7%;margin-left: 10%;
+}
+.task p{
+ max-width: 400px;
+ padding: 10px 20px;
+ text-align: center;
+ font-family: Open Sans;
+}
+.task img{
+ width: 150px;
+ text-align: center;
+ margin: 0 auto;
+}
+.adv-title{
+ max-width: 400px;
+ text-align: center;
+ font-family: Open Sans;
+}
+.adv-slider{
+ padding-top: 10px;
+ max-width: 400px;
+ display: flex;
+ flex-grow: 1;
+}
+.slick-active{
+ outline: none;
+}
+.prev{
+ position: absolute;
+ z-index: 99;
+ width: 30px;
+ height: 30px;
+ border: none;
+ background: url(../img/left_arrow.png) center no-repeat;
+ background-size: 100%;
+ outline: none;
+ top: 50%;
+ left: -32px;
+ transform: translateY(-50%);
+}
+.prev:hover{
+ cursor: pointer;
+}
+.next{
+ position: absolute;
+ z-index: 99;
+ width: 30px;
+ height: 30px;
+ border: none;
+ background: url(../img/right_arrow.png) center no-repeat;
+ background-size: 100%;
+ outline: none;
+ top: 50%;
+ right: -32px;
+ transform: translateY(-50%);
+}
+.next:hover{
+ cursor: pointer;
+}
+.about_company{
+ display: flex;
+ max-width: 700px;
+ flex-grow: 3;
+}
+.about_company p{
+ max-width: 700px;
+ font-family: Open Sans;
+ font-size: 20px;
+ text-align: center;
+}
+.about_company span{
+ color: red;
+}
+
+/* Features section */
+.features{
+ padding: 40px 0 40px 0;
+ text-align: center;
+ max-width: auto;
+ background-color: #B7E39A;
+}
+.features h1{
+ text-align: center;
+}
+.features-flex-container{
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+}
+.features-slider{
+ display: flex;
+ flex-grow: 1;
+ text-align: center;
+ padding-top: 10px;
+ max-width: 1000px;
+ margin-left: auto; margin-right: auto;
+}
+.features-flex{
+ display: flex;
+ flex-flow: row wrap;
+ max-width: 400px;
+ margin: 0 20px 0 20px;
+}
+.features-img{
+ padding-top: 20px;
+ padding-bottom: 20px;
+ width: 150px;
+ height: 150px;
+ text-align: center;
+ margin: 0 auto;
+}
+.features-flex p{
+ max-width: 400px;
+ text-align: center;
+ font-family: Open Sans;
+ padding: 0 20px 0 20px;
+}
+
+/* About product section */
+.about_product{
+ padding-top: 40px;
+ padding-bottom: 40px;
+ background-color: #B7E39A;
+}
+.accordion{
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+}
+.tab input, .tab-content {
+ display: none;
+}
+   .tab {
+    text-align: center;
+    max-width: 100%;
+    background-color: white;
+    font-family: Open Sans; /* Параметры шрифта */
+    border: 1px solid #e9eaec; /* Параметры рамки */
+    border-radius: 3px; /* Скругляем уголки */
+    color: #399200; /* Цвет текста */
+    margin-bottom: 10px; /* Расстояние между пунктами */
+   }
+   .tab-title {
+    padding: 10px; /* Поля вокруг текста */
+    display: block; /* Блочный элемент */
+    text-transform: uppercase; /* Все буквы заглавные */
+    font-weight: bold; /* Жирное начертание */
+    cursor: pointer; /* Вид курсора */
+   }
+   .tab-title::after {
+    content: '+'; /* Выводим плюс */
+    float: right; /* Размещаем по правому краю */
+   }
+   .tab-content {
+    padding: 10px 20px; /* Поля вокруг текста */
+   }
+   .tab-content li{
+    font-family: Open Sans;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    padding-bottom: 10px;
+    list-style: none;
+   }
+   .tab-content li:before{
+    content: '✔';
+    color: green;
+    padding-right: 10px;
+   }
+
+   .tab :checked + .tab-title {
+    background-color: green; /* Цвет фона */
+    border-radius: 3px 3px 0 0; /* Скругляем уголки */
+    color: #fff; /* Цвет текста */
+   }
+   .tab :checked + .tab-title::after {
+    content: '−'; /* Выводим минус */
+   }
+   .tab :checked ~ .tab-content {
+    display: flex; /* Показываем содержимое */
+   }
+
+/* Relevance section */
+.relevance{
+ padding-top: 40px;
+ margin-bottom: 50px;
+}
+.relevance h1{
+ padding-bottom: 20px;
+ text-align: center;
+ font-family: Open Sans;
+ color: green;
+}
+/* Style the tab */
+.tabb {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-around;
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color:  white;
+ border-radius: 5px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabb button {
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tablinks{
+ text-align: center;
+ color: green;
+ font-family: Open Sans;
+ font-weight: 500;
+ font-size: 20px;
+}
+/* Change background color of buttons on hover */
+.tabb button:hover {
+ color: white;
+ background-color: #81C753;
+ border-radius: 10px;
+}
+
+/* Create an active/current tablink class */
+.tabb button.active {
+ color: white;
+ background-color: #81C753;
+ border-radius: 10px;
+}
+
+/* Style the tab content */
+.tabcontent-flex{
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-between;
+}
+.tabcontent-text{
+ max-width: 40%;
+ padding-left: 20px;
+ padding-bottom: 20px;
+}
+.tabcontent-text-med{
+ max-width: 20%;
+ padding-left: 20px;
+ padding-bottom: 20px;
+}
+.img-relevance{
+ align-self: center;
+}
+.tabcontent-relevance{
+ padding-right: 20px;
+ max-width: 25%;
+ font-family: Open Sans;
+ align-self: center;
+}
+.tabcontent-relevance-med{
+ padding-right: 20px;
+ max-width: 55%;
+ font-family: Open Sans;
+ align-self: center;
+}
+.tabcontent-relevance-med li{
+ padding-bottom: 10px;
+ list-style: none;
+}
+.tabcontent-relevance-med li:before{
+ content: '✔';
+ color: green;
+ padding-right: 10px;
+}
+.tabcontent-relevance li{
+ padding-bottom: 40px;
+ list-style: none;
+}
+.tabcontent-relevance li:before{
+ content: '✔';
+ color: green;
+ padding-right: 10px;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ border-top: none;
+}
+.tabcontent h3{
+ display: block;
+ text-align: center;
+ padding: 15px;
+ font-family: Open Sans;
+}
+.tabcontent img{
+ display: block;
+ max-width: 100%;
+ margin-left: auto;margin-right: auto;
+ text-align: center;
+}
+.tabcontent p{
+ font-family: Open Sans;
+}
+.avi-1{
+ width: 300px;
+ max-width: 100%;
+ float: left;
+ text-align: left;
+ padding-top: -20px;
+}
+
+/* Footer */
+footer{
+ background-color: #B7E39A;
+ padding-top: 40px;
+}
+.footer-flex {
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+}
+.map{
+ display: block;
+ max-width: 40%;
+ margin: 0;
+}
+.contact{
+ display:block;
+ max-width: 40%;
+ align-self: center;
+ margin-right: 10%;
+}
+footer a{
+ color: black;
+ padding: 20px;
+ font-size: 20px;
+}
+footer a:hover{
+ color: blue;
+ font-size: 20px;
+}
+footer h2{
+ padding-bottom: 20px;
+ font-family: Open Sans;
+}
+footer p{
+ padding: 20px;
+ font-family: Open Sans;
+ font-size: 20px;
+ padding-left: 0;
+}
+
+@media (max-width: 1400px){
+ .flex-container-company{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+ }
+ .adv-title{
+  padding-top: 40px;
+ }
+}
+@media (max-width: 1100px){
+.features-slider{
+ max-width: 650px;
+}
+.tabcontent-flex{
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: space-between;
+}
+.tabcontent-text, .tabcontent-text-med, .tabcontent-relevance, .tabcontent-relevance-med, .img-relevance{max-width: 100%;}
+.tabb{
+ display: flex;
+ flex-direction: column;
+}
+.tabb button{
+ margin-bottom: 3px;
+}
+.footer-flex {
+ flex-direction: column;
+}
+.contact{
+ max-width: 100%;
+ margin-right: auto; margin-left: auto;
+}
+.contact h2{
+ text-align: center;
+}
+.map{
+ text-align: center;
+ max-width: 100%;
+}
+}
+@media (max-width: 932px){
+ .logo{
+  display: none;
+ }
+ .flex-container{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+ }
+ .p-flex-2{
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  flex-grow: 1;
+  margin-right:auto; margin-left: auto;
+ }
+ .product{
+  width: auto;
+  margin: 0;
+  padding-right: 0;
+ }
+ .header-menu{
+  margin-left: auto;margin-right: auto;
+  padding-left: 0;
+ }
+ .flex-container-a_product{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+ }
+ .a_product-img{
+  padding-left: 10px;padding-right: 10px;
+ }
+}
+@media (max-width: 775px){
+ .header-menu{
+  flex-direction: column;
+  text-align: center;
+ }
+ .nav-bar-menu{
+  justify-content: center;
+ }
+ .container{
+  padding: 0;
+ }
+ .img-flex-1{
+  display: block;
+  width: 100%;
+ }
+ .product p{
+ width: 100%;
+ }
+ .left{
+  max-width: 100%;
+ }
+ .prev{
+  left: -22px;
+ }
+ .next{
+  right: -22px;
+ }
+ .features-slider{
+  max-width: 310px;
+ }
+}
